@@ -277,7 +277,7 @@ functions, that will lead to good behaviors.
       <tr>
         <td width="1200px">
           <center>
-            <a href="./website_files/img.png"><img src="./website_files/img.png" width="900px" /></a><br />
+            <a href="./website_files/laq.png"><img src="./website_files/laq.png" width="600px" /></a><br />
           </center>
         </td>
       </tr>
@@ -285,6 +285,31 @@ functions, that will lead to good behaviors.
   </table>
   <br />
 
+  <hr />
+  <center>
+    <h1>Behaviors from Value Functions</h1>
+  <div style="width:800px; margin:0 auto; text-align:justify">
+    We show that there are settings in which Q-learning can recover the optimal value function even in the absence of the knowledge of underlying actions. Concretely, we prove that if we are able to obtain an action space which is a strict refinement of the original action
+space, then Q-learning in this refined action space recovers the optimal value function.
+</div>
+    <br/>
+    <a href="./website_files/res.png"><img src="./website_files/res.png" width="800px" /></a><br /><br/>
+
+  <div style="width:800px; margin:0 auto; text-align:justify">
+    We evaluate our method in five environments which test our approach on factors that make
+policy learning hard: continuous control, high-dimensional observations and control, complex real
+world appearance, 3D geometric reasoning, and learning across embodiments.  LAQ learned value functions speed up learning in the different settings over learning simply with sparse
+rewards. In almost all settings, our method not only learns more
+quickly than sparse reward, but converges to a higher mean performance.
+  </div><br/>
+  <a href="./website_files/plots.png"><img src="./website_files/plots.png" width="800px" /></a><br /><br/>
+  <div style="width:800px; margin:0 auto; text-align:justify">Decoupling
+the learning of value function and the policy has the advantage that learned value functions can be
+used to improve learning across embodiment. LAQ-densified rewards functions, speed-up learning
+and consistently guide to higher reward solutions than sparse task rewards, or D3G.</div><br/>
+            <a href="./website_files/plots2.png"><img src="./website_files/plots2.png" width="550px" /></a><br />
+  </center>
+  
   <hr />
 
   <center>
