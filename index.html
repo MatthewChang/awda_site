@@ -206,15 +206,16 @@
 
   <table align="center" width="700px">
           <tbody><tr>
-            <td align="center" width="200px"><center><span style="font-size:24px"><a href="">Paper</a></span></center></td>
-            <td align="center" width="200px"><center><span style="font-size:24px"><a href="">Supplementary Material</a></span></center></td>
-            <td align=center width=200px><center><span style="font-size:24px"><a href="">Code (coming soon)</a></span></center></td>
+            <!--<td align="center" width="200px"><center><span style="font-size:24px"><a href="">Paper</a></span></center></td>-->
+            <td align="center" width="200px"><center><span style="font-size:24px"><a href="website_files/sup.pdf">Supplementary Material</a></span></center></td>
+            <!--<td align=center width=200px><center><span style="font-size:24px"><a href="">Code (coming soon)</a></span></center></td>-->
+            <td align=center width=200px><center><span style="font-size:24px">Code (coming soon)</span></center></td>
           </tr><tr>
       </tr></tbody></table>
   <table align="center" width="300px" style="padding-top: 25px">
     <tbody>
       <tr>
-        <!--<td align="center" width="300px"><iframe width="700" height="400" src="https://www.youtube.com/embed/QIRHDla_oGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>-->
+        <td align="center" width="300px"><iframe width="700" height="400" src="https://www.youtube.com/embed/iJnwT4tT6bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
         </td>
       </tr>
     </tbody>
@@ -225,7 +226,7 @@
 
 
   <div style="width:800px; margin:0 auto; text-align:justify">
-     <!--This paper tackles the problem of learning value functions from undirected state-only experience (state transitions without action labels i.e. (s,s',r) tuples). We first theoretically characterize the applicability of Q-learning in this setting. We show that tabular Q-learning in discrete Markov decision processes (MDPs) learns the same value function under any arbitrary refinement of the action space. This theoretical result motivates the design of Latent Action Q-learning or LAQ, an offline RL method that can learn effective value functions from state-only experience. Latent Action Q-learning (LAQ) learns value functions using Q-learning on discrete latent actions obtained through a latent-variable future prediction model. We show that LAQ can recover value functions that have high correlation with value functions learned using ground truth actions. Value functions learned using LAQ lead to sample efficient acquisition of goal-directed behavior, can be used with domain-specific low-level controllers, and facilitate transfer across embodiments. Our experiments in 5 environments ranging from 2D grid world to 3D visual navigation in realistic environments demonstrate the benefits of LAQ over simpler alternatives, imitation learning oracles, and competing methods.-->
+In this paper, we analyze the behavior of existing techniques and design new solutions for the problem of one-shot visual imitation. In this setting, an agent must solve a novel instance of a novel task given just a single visual demonstration. Our analysis reveals that current methods fall short because of three errors: the DAgger problem arising from purely offline training, last centimeter errors in interacting with objects, and mis-fitting to the task context rather than to the actual task.  This motivates the design of our modular approach where we a) separate out task inference (what to do) from task execution (how to do it), and b) develop data augmentation and generation techniques to mitigate mis-fitting.  The former allows us to leverage hand-crafted motor primitives for task execution which side-steps the DAgger problem and last centimeter errors, while the latter gets the model to focus on the task rather than the task context. Our model gets 100% and 48% success rates on two recent benchmarks, improving upon the current state-of-the-art by absolute 90% and 20% respectively. 
 
   </div>
   <br />
